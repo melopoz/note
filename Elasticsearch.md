@@ -1,3 +1,5 @@
+
+
 ELK
 
 elasticsearch + Logstash + Kibana
@@ -376,3 +378,110 @@ GET /kibana_sample_data_ecommerce/_analyze
 
 ```
 
+
+
+### Spring Data Elasticsearch
+
+​	可以使用RestClient(RestHighLevelClient)、Jest、SpringDataElasticsearch
+
+
+
+#### RestHighLevelClient
+
+_My Project.spring-elasticsearch
+
+
+
+#### Jest
+
+引入依赖 （就不需要再引入elasticsearch的依赖了）
+
+```xml
+<!-- https://mvnrepository.com/artifact/io.searchbox/jest -->
+<dependency>
+    <groupId>io.searchbox</groupId>
+    <artifactId>jest</artifactId>
+    <version>6.3.1</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+直接注入bean，不需要自己配置bean
+
+```java
+@Autowired
+JestClient jestClient;
+```
+
+添加索引
+
+```java
+import io.searchbox.core.Index;
+```
+
+```java
+Player player = new Player(...);
+Index index = new Index.Builder(player).index("索引").type("类型").build();
+try{
+	jestClient.execute(index);
+}catch (IOException e){
+	e.printStackTrace();
+}
+```
+
+...
+
+#### SpringDataElasticsearch
+
+依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<!--需要使用json-->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.5</version>
+</dependency>
+```
+
+实体类
+
+```java
+@Document(indexName="nba", type="player")
+public class Player{
+...
+}
+```
+
+repository接口
+
+```java
+public interface PlayerRepo extends ElasticsearchRepository<Player, Integer>{
+}
+```
+
+注入bean即可使用
+
+```java
+@Autowired
+PlayerRepo playerRepo;
+```
+
+添加索引
+
+```java
+playerRepo.index(new Player(...));
+```
+
+使用接口的方法即可
