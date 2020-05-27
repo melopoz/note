@@ -1,13 +1,3 @@
-### 其他问题
-
-​	栈上分配
-
-对象逃逸
-
-csdn jvm收藏夹有记录
-
-
-
 方法区的两种实现：(方法去只是一个逻辑概念，类似接口，1.7的实现是老年代；1.8的实现是元数据区)
 
 ​	老年代 tenured：由JVM管理，必须设置大小。是常量的存储位置
@@ -22,37 +12,15 @@ csdn jvm收藏夹有记录
 
 堆空间逻辑分区
 
-![image-20200320142659339](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200320142659339.png)
+![GC-堆内存逻辑分区](images\GC-堆内存逻辑分区.png)
 
 
 
+![image-20200319200908704](images\image-20200319200908704.png)
 
 
-
-
-
-
-![image-20200319200908704](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200319200908704.png)
-
-![image-20200319201039143](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200319201039143.png)
 
 GCroots 根可达算法：从main种的根对象找他引用的所有对象 能找到就不是垃圾
-
-哪些是根实例
-
-![image-20200319201558352](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200319201558352.png)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

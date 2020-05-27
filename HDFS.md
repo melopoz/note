@@ -61,13 +61,13 @@ HDFS采用最近时间点的FsImage + 增量的EditsLog
 
 - 第n个block副本放在 随机节点。
 
-![](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200522202037852.png)
+![hdfs-副本位置](images\hdfs-副本位置.png)
 
 
 
 ### HDFS写流程
 
-![image-20200522203106000](C:\Users\melopoz\AppData\Roaming\Typora\typora-user-images\image-20200522203106000.png)
+![hdfs-写流程](images\hdfs-写流程.png)
 
 > block 块  packet小包(64kb)  chunk大块(512kb)
 >
