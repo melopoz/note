@@ -343,9 +343,6 @@ bin/hadoop dfsadmin -safemode leave
 
 1. 克隆4台虚拟机，并分别配置ip
 
-   ```sh
-   
-   ```
 
-   
+
 
