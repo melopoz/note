@@ -41,6 +41,8 @@ Eureka：AP
 
    熔断机制：Hystrix
 
+   负载均衡：Ribbon
+
 3. Spring Cloud Alibaba
 
    2019.9开始使用 一站式解决方案
