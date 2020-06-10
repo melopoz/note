@@ -55,7 +55,7 @@ https://www.cnblogs.com/kismetv/p/9137897.html
 
 ## redis内存淘汰机制
 
->  数据库中有2000w数据，redis中只存20w数据，如何博阿正redis中的数据是热点数据？
+>  数据库中有2000w数据，redis中只存20w数据，如何保证redis中的数据是热点数据？
 
 ### 8种数据淘汰策略：
 
