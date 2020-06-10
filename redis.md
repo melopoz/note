@@ -113,14 +113,14 @@ save 60 10000	#在60s(1min)之后，至少1w个key发生变化，snapshot
 在redis.conf中
 
 ```properties
-appendfsync always		#每次发生数据修改都会写入AOF，(严重降低redis的速度)
-appendfsync everysec	#每秒同步一次
+appendfsync always		# 每次发生数据修改都会写入AOF，(严重降低redis的速度)
+appendfsync everysec	# 每秒同步一次
 appendfsync no			# 由操作系统决定何时同步
 ```
 
 ### 3. 混合持久化 RDB+AOP 
 
-> 4.0开始支持， 默认关闭。 通过配置项```aof-use-rdb-preamble```开启。
+> 4.0开始支持， 默认关闭。 通过配置项  ```aof-use-rdb-preamble```  开启。
 
 混合持久化在AOF重写的时候把RDB的内容写入到aof文件的开头。
 
