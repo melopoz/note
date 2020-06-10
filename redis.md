@@ -546,7 +546,7 @@ https://www.cnblogs.com/L-Test/p/11626124.html
 
 - 监控master和slave是否正常运行；
 - master出现故障就将slave转化为master；
-- 多个哨互相监控；
+- 多个哨兵互相监控；
 - 多个哨兵同时监控一个redis
 
 ##### 哨兵和redis之间的通信
