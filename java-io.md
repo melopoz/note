@@ -1,4 +1,4 @@
-# IO
+## IO
 
 1.4之前， 传统io，阻塞 所以又叫BIO（Blocking IO）
 
@@ -6,9 +6,9 @@
 
 比如用socket，想要多个client同时访问就要开同样多个线程来处理client的链接，线程资源太宝贵了，这不OK。
 
-> JavaGuide项目中有详细介绍。
 
-# NIO
+
+## NIO
 
 New IO / Non blocking IO
 
@@ -16,15 +16,15 @@ New IO / Non blocking IO
 
 - ##### channels
 
-  > 通道是双向的，流的读写是单向的
+  通道是双向的，流的读写是单向的
 
 - ##### buffers
 
-  > 比如ByteBuffer，其他每种java基本类型(除了boolean)都对应一种缓冲区
+  比如ByteBuffer，其他每种java基本类型(除了boolean)都对应一种缓冲区
 
 - ##### selectors
 
-  > 用于单个线程处理多个通道。
+  用于单个线程处理多个通道。
 
 ### NIO的特点也就是和IO的不同之处：
 
@@ -40,9 +40,7 @@ New IO / Non blocking IO
 
 
 
-
-
-# AIO
+## AIO
 
 **Asynchronous** IO
 
