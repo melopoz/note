@@ -16,6 +16,10 @@ rebase 不分叉合并
 
 `git remote add origin https://xxx.git`
 
+##### 第一次push 的时候携带的参数
+
+`git push -u origin master`
+
 
 
 ---
