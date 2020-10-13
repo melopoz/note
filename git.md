@@ -8,6 +8,14 @@ rebase 不分叉合并
 
 
 
+##### 初始化成git仓库
+
+`git init`
+
+##### 绑定到远程仓库
+
+`git remote add origin https://xxx.git`
+
 
 
 ---
