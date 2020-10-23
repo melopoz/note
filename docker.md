@@ -193,7 +193,7 @@ docker run [options] IMAGE [command][arg]
 ```
 ##### 运行时命令
 ```
-    docker ps// 查看正在运行的容器
+    docker ps// 查看正在运行的容器   --no-trunc 不截断输出,显示完整containerID
         -a //列出当前所有正在运行的容器 + 历史上运行过的
         -l //显示最近创建的容器
         -n 3 //显示最近创建的3个容器

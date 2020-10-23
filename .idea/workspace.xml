@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6358fd54-f49f-444f-ad29-882c5f5ca399" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HDFS.md" beforeDir="false" afterPath="$PROJECT_DIR$/HDFS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image-20200522201920248.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image-20200522202037852.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image-20200522203106000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka.md" beforeDir="false" afterPath="$PROJECT_DIR$/kafka.md" afterDir="false" />
-    </list>
+    <list default="true" id="6358fd54-f49f-444f-ad29-882c5f5ca399" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/netty-stu" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,10 +61,17 @@
       <option name="presentableId" value="Default" />
       <updated>1590502452325</updated>
       <workItem from="1590502453674" duration="638000" />
+      <workItem from="1603347784743" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603347811258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603347811258" />
   </component>
 </project>
